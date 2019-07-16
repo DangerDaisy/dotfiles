@@ -44,4 +44,4 @@ filetype plugin indent on
 
 "Keyboard mapping
 map <F3> :NERDTreeToggle<Enter>
-
+map <F4> :TagbarToggle<Enter>
