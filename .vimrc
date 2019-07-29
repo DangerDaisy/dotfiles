@@ -1,4 +1,4 @@
-"Vundle Settings
+"---[VUNDLE]---
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -17,24 +17,14 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'jreybert/vimagit'
 call vundle#end()
 
-"Airline settings
+"---[AIRLINE]---
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
 
+"---[VIM]---
 colorscheme dracula
-set guifont="monofurNerdFontComplete 8"
-
-"General (G)Vim settings
-
-"GVIM Minimal view.
-set go-=m
-set go-=T
-set go-=M
-set go-=r
-set go-=b
-
 syntax on
 set autochdir
 set shiftwidth=4
@@ -42,6 +32,31 @@ set tabstop=4
 set number relativenumber
 filetype plugin indent on
 
-"Keyboard mapping
+"---[GVIM]---
+set guifont="monofurNerdFontComplete 8"
+"GVIM Minimal view.
+"Remove Menubar
+set go-=m
+"Remove Topbar
+set go-=T
+"Remove Left Scrollbars
+set go-=l
+set go-=L
+"Remove Right Scrollbars
+set go-=r
+set go-=R
+"Remove Bottom Scrollbars
+set go-=b
+set go-=B
+
+"---[KEYBOARD MAPPINGS]---
 map <F3> :NERDTreeToggle<Enter>
 map <F4> :TagbarToggle<Enter>
+map <F5> :Magit<Enter>
+
+"Map Escape to save current buffer
+map <Esc> :w<Enter>
+
+"---[TWEAKS]---
+"Causes cursor to move to end of selection after yanking insted of return to the top
+vmap y y'];
