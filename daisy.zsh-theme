@@ -57,7 +57,7 @@ connect_segment(){
 }
 
 end_prompt(){
-	segment="${segment}%k%F{$bg}${seperator}"
+	segment="${segment} %k%F{$bg}${seperator}"
 }
 
 build_prompt(){
