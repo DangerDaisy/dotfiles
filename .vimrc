@@ -15,6 +15,8 @@ Plugin 'dracula/vim'
 Plugin 'ervandew/supertab'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'jreybert/vimagit'
+Plugin 'luochen1990/rainbow'
+Plugin 'mhinz/vim-startify'
 call vundle#end()
 
 "---[AIRLINE]---
@@ -31,6 +33,7 @@ set shiftwidth=4
 set tabstop=4
 set number relativenumber
 filetype plugin indent on
+set cursorline
 
 "---[GVIM]---
 set guifont="monofurNerdFontComplete 8"
@@ -56,6 +59,8 @@ map <F5> :Magit<Enter>
 
 "Map Escape to save current buffer
 map <Esc> :w<Enter>
+"Great for typing snake_case variables faster.
+imap <C-Space> _
 
 "---[TWEAKS]---
 "Causes cursor to move to end of selection after yanking insted of return to the top
