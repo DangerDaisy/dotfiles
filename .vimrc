@@ -31,6 +31,7 @@ syntax on
 set autochdir
 set shiftwidth=4
 set tabstop=4
+set backspace=2
 set number relativenumber
 filetype plugin indent on
 set cursorline
