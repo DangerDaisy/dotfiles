@@ -37,6 +37,10 @@ set number relativenumber
 filetype plugin indent on
 set cursorline
 
+if has('win32')
+  set makeprg=mingw32-make
+endif
+
 "---[GVIM]---
 set guifont="monofurNerdFontComplete 8"
 "GVIM Minimal view.
