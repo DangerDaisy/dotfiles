@@ -20,13 +20,16 @@ Plugin 'luochen1990/rainbow'
 Plugin 'mhinz/vim-startify'
 call vundle#end()
 
-"---[AIRLINE]---
-set laststatus=2
+"---[GLOBAL VARIABLES]---
+" Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
+" Rainbow
+let g:rainbow_active = 1
 
 "---[VIM]---
+set laststatus=2
 colorscheme dracula
 syntax on
 set autochdir
