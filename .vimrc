@@ -39,6 +39,7 @@ set backspace=2
 set number relativenumber
 filetype plugin indent on
 set cursorline
+set folding=syntax
 
 if has('win32')
   set makeprg=mingw32-make
