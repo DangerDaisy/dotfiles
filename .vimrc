@@ -19,6 +19,7 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'jreybert/vimagit'
 Plugin 'frazrepo/vim-rainbow'
 Plugin 'mhinz/vim-startify'
+Plugin 'wikitopian/hardmode'
 call vundle#end()
 
 "---[GLOBAL VARIABLES]---
@@ -73,6 +74,4 @@ map <Esc> :w<Enter>
 "Great for typing snake_case variables faster.
 imap <C-Space> _
 
-"---[TWEAKS]---
-"Causes cursor to move to end of selection after yanking insted of return to the top
-vmap y y'];
+call Hardmode()
