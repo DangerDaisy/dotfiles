@@ -16,7 +16,7 @@ Plugin 'dracula/vim'
 Plugin 'ervandew/supertab'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'jreybert/vimagit'
-Plugin 'luochen1990/rainbow'
+Plugin 'frazrepo/vim-rainbow'
 Plugin 'mhinz/vim-startify'
 call vundle#end()
 
@@ -39,7 +39,7 @@ set backspace=2
 set number relativenumber
 filetype plugin indent on
 set cursorline
-set folding=syntax
+set foldmethod=syntax
 
 if has('win32')
   set makeprg=mingw32-make
