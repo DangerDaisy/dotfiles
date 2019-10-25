@@ -68,10 +68,9 @@ set go-=B
 map <F3> :NERDTreeToggle<Enter>
 map <F4> :TagbarToggle<Enter>
 map <F5> :Magit<Enter>
+inoremap jj <ESC>
 
 "Map Escape to save current buffer
 map <Esc> :w<Enter>
 "Great for typing snake_case variables faster.
 imap <C-Space> _
-
-call Hardmode()
