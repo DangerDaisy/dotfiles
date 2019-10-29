@@ -3,6 +3,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+"---[PLUGINS]---
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-surround'
@@ -23,7 +24,7 @@ Plugin 'wikitopian/hardmode'
 call vundle#end()
 
 "---[GLOBAL VARIABLES]---
-" Airline
+"Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
@@ -50,18 +51,13 @@ endif
 "---[GVIM]---
 set guifont="monofurNerdFontComplete 8"
 "GVIM Minimal view.
-"Remove Menubar
-set go-=m
-"Remove Topbar
-set go-=T
-"Remove Left Scrollbars
-set go-=l
+set go-=m "Remove Menubar
+set go-=T "Remove Topbar
+set go-=l "Remove Left Scrollbars
 set go-=L
-"Remove Right Scrollbars
-set go-=r
+set go-=r "Remove Right Scrollbars
 set go-=R
-"Remove Bottom Scrollbars
-set go-=b
+set go-=b "Remove Bottom Scrollbars
 set go-=B
 
 "---[KEYBOARD MAPPINGS]---
@@ -70,7 +66,11 @@ map <F4> :TagbarToggle<Enter>
 map <F5> :Magit<Enter>
 inoremap jj <ESC>
 
-"Map Escape to save current buffer
-map <Esc> :w<Enter>
-"Great for typing snake_case variables faster.
-imap <C-Space> _
+map <Esc> :w<Enter> "Map Escape to save current buffer
+imap <S-Space> _ "Great for typing snake_case variables faster.
+
+"Bracket mappings
+imap < <><LEFT>
+imap ( ()<LEFT> "
+imap { {<CR>}O<TAB>
+
