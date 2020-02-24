@@ -65,12 +65,13 @@ map <F3> :NERDTreeToggle<Enter>
 map <F4> :TagbarToggle<Enter>
 map <F5> :Magit<Enter>
 inoremap jj <ESC>
-
-map <Esc> :w<Enter> "Map Escape to save current buffer
-imap <S-Space> _ "Great for typing snake_case variables faster.
+"
+"Map Escape to save current buffer
+map <Esc> :w<Enter> 
+"Great for typing snake_case variables faster.
+imap <S-Space> _ 
 
 "Bracket mappings
 imap < <><LEFT>
-imap ( ()<LEFT> "
-imap { {<CR>}O<TAB>
-
+imap ( ()<LEFT>
+imap { {<CR>}<ESC>O<TAB>
