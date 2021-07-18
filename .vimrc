@@ -36,6 +36,7 @@ set cursorline
 set foldmethod=syntax
 
 "---[GVIM]---
+colorscheme jellybeans "https://github.com/nanotech/jellybeans.vim
 set guifont="monofurNerdFontComplete 8"
 "GVIM Minimal view.
 set go-=m "Remove Menubar
