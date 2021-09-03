@@ -25,7 +25,6 @@ let g:airline_powerline_fonts = 1
 
 "---[VIM]---
 set laststatus=2
-colorscheme dracula
 syntax on
 set shiftwidth=4
 set tabstop=4
@@ -33,7 +32,6 @@ set backspace=2
 set number relativenumber
 filetype plugin indent on
 set cursorline
-set foldmethod=syntax
 
 "---[GVIM]---
 colorscheme jellybeans "https://github.com/nanotech/jellybeans.vim
