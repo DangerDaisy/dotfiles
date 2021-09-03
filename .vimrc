@@ -13,7 +13,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'jreybert/vimagit'
-Plugin 'ilyarcher/cmake4vim'
+Plugin 'vhdirk/vim-cmake'
 Plugin 'majutsushi/tagbar'
 call vundle#end()
 
