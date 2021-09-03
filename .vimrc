@@ -48,7 +48,6 @@ set go-=B
 
 "---[KEYBOARD MAPPINGS]---
 map <F1> :NERDTreeToggle<Enter>
-mapz
 map <F4> :TagbarToggle<Enter>
 map <F5> :Magit<Enter>
 inoremap jj <ESC>
